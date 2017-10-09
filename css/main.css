@@ -228,21 +228,6 @@ section.designs{
   background: -moz-linear-gradient(right, #D4B98D, #765A50); /* For Firefox 3.6 to 15 */
   background: linear-gradient(to right, #D4B98D , #765A50); /* Standard syntax */
 }
-div.description{
-  position: relative;
-  top: -40px;
-  left: 20px;
-  font-family: 'Julius Sans One', sans-serif;
-  font-weight: bold;
-  display: none;
-  font-size: 1.5vw;
-}
-div.fox:hover div.description,
-div.wolf:hover div.description,
-div.owl:hover div.description{
-  display: block;
-  animation-duration: 0.4s;
-}
 .games-society-logo{
   grid-column-start: 1;
   grid-column-end: 4;
@@ -258,24 +243,6 @@ div.owl:hover div.description{
   grid-row-end: 3;
   background: url("../assets/mash-up-logo.png") no-repeat;
   background-size: 100%;
-}
-.logo-description{
-  font-family: 'Julius Sans One', sans-serif;
-  font-weight: bold;
-  margin: 20px;
-  display: none;
-}
-.logo-description :first-child{
-  font-size: 2.3vw;
-}
-.logo-description :last-child{
-  font-family: 'Raleway', sans-serif;
-  font-weight: normal;
-}
-.games-society-logo:hover .logo-description,
-.mash-up-logo:hover .logo-description{
-  display: block;
-  animation-duration: 0.4s;
 }
 /*footer*/
 footer{
