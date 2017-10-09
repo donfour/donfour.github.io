@@ -1,0 +1,13 @@
+/*fox logo*/
+.fox-logo-container{
+  height: 100vh;
+}
+
+.fox-logo{
+  fill:none;
+  stroke: #1D3B70;
+  stroke-width:8;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+  stroke-miterlimit:10;
+}

@@ -1,0 +1,292 @@
+/*fonts*/
+@import url('https://fonts.googleapis.com/css?family=Lato|Playfair+Display|Lalezar|Julius+Sans+One|Monoton|Raleway');
+
+/*setup*/
+html, body{
+  height: 100%;
+}
+
+body{
+  background-color: #F4F4EC;
+  margin: 0;
+}
+
+a{
+  text-decoration: none;
+}
+
+a, a:visited, a:hover, a:active {
+  color: inherit;
+}
+
+/*landing page*/
+section.landing-page{
+  background-color: #F4F4EC;
+  display: flex;
+}
+
+.fox-logo-container{
+  flex: 1;
+  z-index: 1;
+}
+
+.page-title{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Lalezar', sans-serif;
+}
+
+#name{
+  font-family: 'Monoton', cursive;
+  letter-spacing: 5px;
+  color: #FFFDDE;
+  position: absolute;
+  font-size: 35vw;
+}
+
+#nav{
+  display: flex;
+  flex-direction: column;
+  font-family: 'Julius Sans One', sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #1D3B70;
+  font-size: 50px; /* fallback for older browsers */
+  font-size: 4vw;
+}
+
+#nav > div {
+  margin: 3px 0;
+}
+
+.underline {
+  position: relative;
+}
+
+.underline:hover,
+.underline:focus,
+.underline:active {
+  cursor: pointer;
+}
+
+.underline:hover:after,
+.underline:focus:after,
+.underline:active:after {
+  width: 100%;
+}
+
+.underline:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 3px;
+  height: 0.2vw;
+  background-color: #1D3B70;
+  width: 0;
+  -webkit-transition: width .4s;
+  transition: width .4s;
+}
+
+/*about*/
+section.about{
+  height:100vh;
+  background-color: #F4F4EC;
+}
+section.about .about-description{
+  font-size: 3vw;
+  color: #1D3B70;
+  font-family: 'Raleway', sans-serif;
+  padding: 30px;
+}
+/*projects*/
+section.projects{
+  background-color: honeydew;
+}
+#section-title{
+  font-family: 'Playfair Display', serif;
+  font-size: 9vw;
+  /*display: inline-block;
+  transform: rotate(-90deg);
+  position: relative;
+  top: 25vh;
+  right: 10vw;*/
+}
+#projects-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: calc(100vw/3.2) calc(100vw/3.2);
+}
+#projects-container #classly{
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+
+  background: url("../assets/classly-cover.png") no-repeat;
+  background-size: 100%;
+}
+#projects-container #committed{
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+
+  background: url("../assets/committed-cover.jpg") no-repeat;
+  background-size: 100%;
+}
+#projects-container #brickr{
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+
+  background: url("../assets/brickr-cover.png") no-repeat;
+  background-size: 100%;
+}
+#projects-container #google-docs-clone{
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+
+  background: url("../assets/docs-cover.png") no-repeat;
+  background-size: 100%;
+}
+.overlay{
+  background-color: rgba(0,0,0,0);
+  height:100%;
+  transition: background-color 0.4s;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.overlay *{
+  display: none;
+}
+.overlay:hover{
+  cursor: pointer;
+  background-color: rgba(0,0,0,0.7);
+}
+.overlay:hover *{
+  display: block;
+}
+.overlay .title{
+  animation-duration: 0.4s;
+  font-family: 'Julius Sans One', sans-serif;
+}
+.overlay .description{
+  animation-duration: 0.4s;
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  padding: 0 10px;
+}
+/*designs*/
+section.designs{
+  background-color: white;
+}
+#design-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 500px calc(100vw/2);
+  width: 100%;
+}
+.fox{
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+
+  background: -webkit-linear-gradient(left, yellow , #F89938); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, yellow, #F89938); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, yellow, #F89938); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, yellow , #F89938); /* Standard syntax */
+}
+.wolf{
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 2;
+
+  background: -webkit-linear-gradient(left, #999999 , #AD997D); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, #999999, #AD997D); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, #999999, #AD997D); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, #999999 , #AD997D); /* Standard syntax */
+}
+.owl{
+  grid-column-start: 5;
+  grid-column-end: 7;
+  grid-row-start: 1;
+  grid-row-end: 2;
+
+  background: -webkit-linear-gradient(left, #D4B98D , #765A50); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, #D4B98D, #765A50); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, #D4B98D, #765A50); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, #D4B98D , #765A50); /* Standard syntax */
+}
+div.description{
+  position: relative;
+  top: -40px;
+  left: 20px;
+  font-family: 'Julius Sans One', sans-serif;
+  font-weight: bold;
+  display: none;
+  font-size: 1.5vw;
+}
+div.fox:hover div.description,
+div.wolf:hover div.description,
+div.owl:hover div.description{
+  display: block;
+  animation-duration: 0.4s;
+}
+.games-society-logo{
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  background: url("../assets/games-society-logo.png") no-repeat;
+  background-size: 100%;
+}
+.mash-up-logo{
+  grid-column-start: 4;
+  grid-column-end: 7;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  background: url("../assets/mash-up-logo.png") no-repeat;
+  background-size: 100%;
+}
+.logo-description{
+  font-family: 'Julius Sans One', sans-serif;
+  font-weight: bold;
+  margin: 20px;
+  display: none;
+}
+.logo-description :first-child{
+  font-size: 2.3vw;
+}
+.logo-description :last-child{
+  font-family: 'Raleway', sans-serif;
+  font-weight: normal;
+}
+.games-society-logo:hover .logo-description,
+.mash-up-logo:hover .logo-description{
+  display: block;
+  animation-duration: 0.4s;
+}
+/*footer*/
+footer{
+  font-family: 'Julius Sans One', sans-serif;
+  font-weight: bold;
+  color: #1D3B70;
+}
+footer div.simple-fox{
+  max-width: 700px;
+  margin:100px 0 30px;
+}
+footer div.footer{
+  margin:0 0 20px;
+}
