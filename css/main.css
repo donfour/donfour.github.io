@@ -169,7 +169,6 @@ section.projects{
   display: none;
 }
 .overlay:hover{
-  cursor: pointer;
   background-color: rgba(0,0,0,0.7);
 }
 .overlay:hover *{
@@ -184,6 +183,22 @@ section.projects{
   font-family: 'Raleway', sans-serif;
   text-align: center;
   padding: 0 10px;
+}
+
+.overlay button{
+  text-transform: uppercase;
+  border: 2px lightgray solid;
+  color: white;
+  background-color: rgba(0,0,0,0);
+  letter-spacing: 2px;
+  height: 22px;
+  margin: 5px 0;
+  transition: all 0.3s
+}
+.overlay button:hover{
+  background-color: white;
+  color: black;
+  cursor: pointer;
 }
 /*designs*/
 section.designs{
