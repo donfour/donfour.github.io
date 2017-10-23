@@ -1,4 +1,4 @@
-## Personal site
+## Personal site (donovanso.com)
 
 Known issues (to be fixed soon):
 1. It's not yet fully responsive
