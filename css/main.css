@@ -101,6 +101,10 @@ section.about .about-description{
   font-family: 'Raleway', sans-serif;
   padding: 30px;
 }
+.about-description a{
+  color: salmon;
+  text-decoration: underline;
+}
 /*projects*/
 section.projects{
   background-color: honeydew;
@@ -262,7 +266,6 @@ section.designs{
 /*footer*/
 footer{
   font-family: 'Julius Sans One', sans-serif;
-  font-weight: bold;
   color: #1D3B70;
 }
 footer div.simple-fox{
