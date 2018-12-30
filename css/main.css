@@ -55,7 +55,7 @@ section.landing-page{
   text-transform: uppercase;
   color: #1D3B70;
   font-size: 50px; /* fallback for older browsers */
-  font-size: 4vw;
+  font-size: 3vw;
 }
 
 #nav > div {
@@ -96,7 +96,7 @@ section.about{
   background-color: #F4F4EC;
 }
 section.about .about-description{
-  font-size: 3vw;
+  font-size: 2.5vw;
   color: #1D3B70;
   font-family: 'Raleway', sans-serif;
   padding: 30px;
@@ -270,7 +270,7 @@ footer{
 }
 footer div.simple-fox{
   max-width: 700px;
-  margin:100px 0 30px;
+  margin:100px 0 40px;
 }
 footer div.footer{
   margin:0 0 20px;
