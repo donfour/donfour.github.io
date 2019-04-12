@@ -142,21 +142,22 @@ section.projects{
   background-size: 100%;
 }
 #projects-container #brickr{
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 2;
-  grid-row-end: 3;
-
-  background: url("../assets/brickr-cover.png") no-repeat;
-  background-size: 100%;
-}
-#projects-container #google-docs-clone{
   grid-column-start: 2;
   grid-column-end: 3;
   grid-row-start: 2;
   grid-row-end: 3;
 
-  background: url("../assets/docs-cover.png") no-repeat;
+
+  background: url("../assets/brickr-cover.png") no-repeat;
+  background-size: 100%;
+}
+#projects-container #class-quota{
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+
+  background: url("../assets/class-quota-cover.png") no-repeat;
   background-size: 100%;
 }
 .overlay{
@@ -211,7 +212,7 @@ section.designs{
 #design-container{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 500px calc(100vw/2);
+  grid-template-rows: 500px calc(100vw/2) calc(100vw/3);
   width: 100%;
 }
 .fox{
@@ -263,6 +264,31 @@ section.designs{
   background: url("../assets/mash-up-logo.png") no-repeat;
   background-size: 100%;
 }
+.tech-club-logo-1{
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  background: url("../assets/tech-club-logo-1.png") no-repeat;
+  background-size: 100%;
+}
+.tech-club-logo-2{
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  background: url("../assets/tech-club-logo-2.png") no-repeat;
+  background-size: 100%;
+}
+.tech-club-logo-3{
+  grid-column-start: 5;
+  grid-column-end: 7;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  background: url("../assets/tech-club-logo-3.png") no-repeat;
+  background-size: 100%;
+}
+
 /*footer*/
 footer{
   font-family: 'Julius Sans One', sans-serif;
